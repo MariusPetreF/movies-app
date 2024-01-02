@@ -9,11 +9,11 @@ const NavBar = () => {
   const handleLogout = async () => {
     try {
       await logOut();
-      navigate('/')
+      navigate('/');
     } catch(error) {
     console.log(error);
     }
-  }
+  };
 
   return (
     <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
